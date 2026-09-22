@@ -280,6 +280,27 @@ src="https://www.facebook.com/tr?id=1242624777415078&ev=PageView&noscript=1"
 .section:not(:first-of-type){content-visibility:auto;contain-intrinsic-size:800px}
 img{max-width:100%}
 </style>
+
+<style id="bonus-section-clean-final">
+/* Seção de bônus revisada: uma identificação, um mockup e uma descrição por bônus. */
+.bonus-cards-v2{gap:22px!important;align-items:stretch!important}
+.bonus-card-v2{display:flex!important;flex-direction:column!important;padding:18px!important;overflow:hidden!important}
+.bonus-card-v2>.bonus-badge-v2{align-self:flex-start!important;position:relative!important;z-index:4!important;margin:0 0 14px!important}
+.bonus-visual-crop,.bonus-visual-clean{width:100%!important;height:230px!important;border-radius:16px!important;overflow:hidden!important;background:#fff!important;margin:0 0 18px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+.bonus-visual-crop img{display:block!important;width:108%!important;max-width:none!important;height:auto!important;min-height:0!important;transform:translateY(-7%)!important;object-fit:contain!important;border:0!important;border-radius:0!important;background:transparent!important;margin:0!important}
+.bonus-visual-crop-guide img{transform:translateY(-8%)!important}
+.bonus-visual-clean img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;border:0!important;border-radius:0!important;background:transparent!important;margin:0!important}
+.bonus-card-v2 h3{margin-top:0!important}
+@media(max-width:560px){
+ .bonus-cards-v2{gap:18px!important}
+ .bonus-card-v2{padding:16px!important;border-radius:22px!important}
+ .bonus-visual-crop,.bonus-visual-clean{height:215px!important;margin-bottom:16px!important}
+ .bonus-visual-crop img{width:110%!important;transform:translateY(-7%)!important}
+ .bonus-visual-crop-guide img{transform:translateY(-8%)!important}
+ .bonus-card-v2 h3{font-size:24px!important;line-height:1.05!important;margin-bottom:10px!important}
+ .bonus-card-v2 p{font-size:16px!important;line-height:1.45!important}
+}
+</style>
 </head><body>
 
 
@@ -401,21 +422,21 @@ img{max-width:100%}
 <div class="bonus-cards-v2" aria-label="3 bônus do Método Cookie Congelável">
   <article class="bonus-card-v2">
     <div class="bonus-badge-v2">BÔNUS 1</div>
-    <img src="bonus-1.png" alt="Bônus 1 — Precificação Lucrativa" loading="lazy" decoding="async">
+    <div class="bonus-visual-crop"><img src="bonus-1.png" alt="Mockup do Bônus 1 — Precificação Lucrativa" loading="lazy" decoding="async"></div>
     <h3>Precificação <span class="pink">Lucrativa</span></h3>
     <p>Planilha + aula rápida para calcular o custo de cada cookie, definir o preço de venda e saber quanto realmente sobra em cada pedido.</p>
   </article>
 
   <article class="bonus-card-v2">
     <div class="bonus-badge-v2">BÔNUS 2</div>
-    <img src="bonus-3.png" alt="Guia de Validade, Congelamento e Armazenamento" loading="lazy" decoding="async">
+    <div class="bonus-visual-crop bonus-visual-crop-guide"><img src="bonus-3.png" alt="Mockup do Bônus 2 — Guia de Validade, Congelamento e Armazenamento" loading="lazy" decoding="async"></div>
     <h3>Guia de Validade, <span class="pink">Congelamento e Armazenamento</span></h3>
     <p>Orientações práticas para embalar, identificar lotes, congelar, armazenar e manter a qualidade da sua produção.</p>
   </article>
 
   <article class="bonus-card-v2 bonus-update-v2">
     <div class="bonus-badge-v2">BÔNUS 3</div>
-    <img src="bonus-atualizacao.webp" alt="Bônus 3 — Pacote de Atualização de Sabores, com capa no tablet e páginas internas do produto" loading="lazy" decoding="async" width="900" height="560">
+    <div class="bonus-visual-clean"><img src="bonus-atualizacao.webp" alt="Mockup do Bônus 3 — Pacote de Atualização de Sabores" loading="lazy" decoding="async" width="900" height="560"></div>
     <h3>Pacote de Atualização <span class="pink">de Sabores</span></h3>
     <p>Sempre que eu desenvolver um novo sabor de cookie, a atualização será adicionada ao curso para você acessar a nova receita dentro do treinamento.</p>
   </article>
