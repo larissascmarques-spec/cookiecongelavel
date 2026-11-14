@@ -341,6 +341,38 @@ img{max-width:100%}
 .bonus-card-v2 h3{min-height:2.5em!important}
 .bonus-card-v2 p{margin-top:0!important;flex:1!important}
 @media(max-width:650px){.bonus-cards-v2{grid-auto-rows:auto!important}.bonus-card-v2{min-height:0!important}.bonus-card-v2 .bonus-visual-crop,.bonus-card-v2 .bonus-visual-clean{height:auto!important;aspect-ratio:4/3!important}}
+</style><style id="cta-headline-proportion-fix">
+/* Consistência visual dos CTAs e hierarquia dos títulos */
+a.btn, a.btn.cta-green, a.btn.offer-green-btn {
+  box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:min(100%,380px)!important;
+  min-height:60px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding:16px 24px!important;
+  font-size:17px!important;
+  line-height:1.2!important;
+  font-weight:900!important;
+  text-align:center!important;
+}
+#oferta a.btn.offer-green-btn {width:100%!important;max-width:100%!important;}
+@media(max-width:560px){
+  .hero.vsl-hero h1, .hero.hero-static h1 {
+    font-size:clamp(27px,7.2vw,32px)!important;
+    line-height:1.08!important;
+    letter-spacing:-1.1px!important;
+  }
+  a.btn, a.btn.cta-green, a.btn.offer-green-btn {
+    width:min(100%,360px)!important;
+    min-height:62px!important;
+    padding:17px 22px!important;
+    font-size:17px!important;
+  }
+  #oferta a.btn.offer-green-btn {width:100%!important;max-width:100%!important;}
+}
 </style></head><body>
 <section class="hero vsl-hero"><div class="wrap vsl-hero-wrap">
 <div class="hero-copy vsl-hero-copy">
